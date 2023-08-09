@@ -1,2 +1,2 @@
 #/bin/bash
-python3 Terr
+python3 ./$PYFILE
