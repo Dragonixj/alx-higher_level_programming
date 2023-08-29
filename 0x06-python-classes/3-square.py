@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+
+
 class Square:
     """Square with a private object attribute size"""
 
