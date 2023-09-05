@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 class Square:
     """Square with a private object attribute size"""
 
@@ -21,4 +22,4 @@ class Square:
         Returns: the area of the square
         """
 
-        return self.__size ** 2
+        return self.__size**2
