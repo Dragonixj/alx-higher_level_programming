@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Defines a square"""
+"""A python module that defines a square"""
 
 
 class Square:
@@ -9,6 +9,9 @@ class Square:
         """
         Args:
             size: size of square
+        Returns:
+            TypeError: if the size is not an integer
+            ValueError: if the size is less than zero
         """
         self.size = size
 
