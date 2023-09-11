@@ -7,8 +7,8 @@ class MyInt(int):
 
     def __equ__(self, value):
         """inverts the int operator == with !="""
-        return self.real != value
+        return int(self) != value
 
     def __nequ__(self, value):
         """inverts the int operator != with =="""
-        return self.real == value
+        return int(self) == value
