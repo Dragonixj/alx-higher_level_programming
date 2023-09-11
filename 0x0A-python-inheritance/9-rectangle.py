@@ -40,6 +40,6 @@ class Rectangle(BaseGeometry):
 
     def __str__(self):
         """returns the representation of the triangle"""
-        string = "[" + str(self.__class__.__name__) + "]"
+        string = "[" + str(self.__class__.__name__) + "] "
         string += str(self.__width) + "/" + str(self.__height)
         return string
