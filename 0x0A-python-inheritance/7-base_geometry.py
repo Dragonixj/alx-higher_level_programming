@@ -5,6 +5,8 @@ module that contains the BaseGeometry class
 
 
 class BaseGeometry:
+    """Not yet implemented"""
+
     def area(self):
         """raises an exception when called"""
         raise Exception("area() is not implemented")
