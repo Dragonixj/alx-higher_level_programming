@@ -19,3 +19,19 @@ class Square(Rectangle):
     def __str__(self):
         """Method that returns a string"""
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.width)
+
+    @property
+    def size(self):
+        """Getter of the size"""
+        return self.width
+
+    @size.setter
+    def size(self, value):
+        """Setter of the size
+        Args:
+           value: Size to assign
+        Return:
+           always Nothing
+        """
+        self.width = value
+        self.heigth = value
