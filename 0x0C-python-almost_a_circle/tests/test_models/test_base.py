@@ -19,3 +19,23 @@ class Test_Base(unittest.TestCase):
         b2 = Base()
         self.assertTrue(type(b1) == type(b2))
         self.assertFalse(id(b1) == id(b2))
+
+    def test_none_id(self):
+        """checks when id is none"""
+        b1 = Base()
+        self.assertEqual(b1.id, 1)
+        b1 = Base()
+        self.assertEqual(b1.id, 2)
+        b1 = Base()
+        self.assertEqual(b1.id, 3)
+        b2 = Base()
+        self.assertEqual(b2.id, 4)
+
+    def test_id_value(self):
+        """checking when the id has an integer value"""
+        b1 = Base(12)
+        self.assertEqual(b1.id, 12)
+        b1.id = 4
+        self.assertEqual(b1.id, 4)
+        b2 = Base(50)
+        self.assertEqual(b2.id, 50)

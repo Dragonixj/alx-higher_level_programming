@@ -25,7 +25,7 @@ class Rectangle(Base):
     @property
     def width(self):
         """The getter size of the width."""
-        return self._width
+        return self.__width
 
     @width.setter
     def width(self, value):
@@ -46,7 +46,7 @@ class Rectangle(Base):
     @property
     def height(self):
         """The getter of the height."""
-        return self._height
+        return self.__height
 
     @height.setter
     def height(self, value):
@@ -101,3 +101,12 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         else:
             self.__y = value
+
+    def area(self):
+        """method for printing the area
+        Args:
+            No arguments
+        Return:
+            the area value of a rectangle instance
+        """
+        return self.width * self.height
