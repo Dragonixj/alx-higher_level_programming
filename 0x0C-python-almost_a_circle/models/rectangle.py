@@ -35,12 +35,17 @@ class Rectangle(Base):
         Return:
             returns nothing
         """
-        self.__width = value
+        if type(value) is not int:
+            raise TypeError("width must be an integer")
+        elif value <= 0:
+            raise ValueError("width must be > 0")
+        else:
+            self.__width = value
 
     # The getter and setter for the height
     @property
     def height(self):
-        """The height."""
+        """The getter of the height."""
         return self._height
 
     @height.setter
@@ -50,4 +55,49 @@ class Rectangle(Base):
             value: size to assign to the height
         Return:
             returns nothing"""
-        self.__height = value
+        if type(value) is not int:
+            raise TypeError("height must be an integer")
+        elif value <= 0:
+            raise ValueError("height must be > 0")
+        else:
+            self.__height = value
+
+    # The getter and setter of the x variable
+    @property
+    def x(self):
+        """The getter of the x"""
+        return self.__x
+
+    @x.setter
+    def x(self, value):
+        """the setter of the x variable
+        Args:
+            value to assign to the x variable
+        Return:
+            returns nothing"""
+        if type(value) is not int:
+            raise TypeError("x must be an integer")
+        elif value < 0:
+            raise ValueError("x must be >= 0")
+        else:
+            self.__x = value
+
+    # The getter and setter for the y variable
+    @property
+    def y(self):
+        """The getter of the x"""
+        return self.__y
+
+    @y.setter
+    def y(self, value):
+        """the setter of the x variable
+        Args:
+            value to assign to the x variable
+        Return:
+            returns nothing"""
+        if type(value) is not int:
+            raise TypeError("y must be an integer")
+        elif value < 0:
+            raise ValueError("y must be >= 0")
+        else:
+            self.__y = value
