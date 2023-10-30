@@ -7,12 +7,12 @@ The 0-add_integer give us one function add_integer
 
 def add_integer(a, b=98):
     """Return the addition of two integers"""
-    if type(a) is not int and type(a) is not float:
+    if not isinstance(a, int) and not isinstance(a, float):
         raise TypeError("a must be an integer")
-    if type(b) is not int and type(b) is not float:
-        raise TypeError("b must be an integer")
-    if type(a) is float:
+    if not isinstance(b, int) and not isinstance(b, float):
+        return TypeError("b must be an integer")
+    if isinstance(a, float):
         a = int(a)
-    if type(b) is float:
+    if isinstance(b, float):
         b = int(b)
     return a + b
