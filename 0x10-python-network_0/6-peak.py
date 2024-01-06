@@ -6,11 +6,12 @@ def find_peak(list_of_integers):
     """Funtion that finds a peak in an unsorted
     list of integers
     """
-    left, right = 0, len(list_of_integers)
+    left = 0
+    right = len(list_of_integers) - 1
     if len(list_of_integers) == 0:
         return None
 
-    while left > right:
+    while left < right:
         mid = (left + right) // 2
 
         if list_of_integers[mid] < list_of_integers[mid + 1]:
