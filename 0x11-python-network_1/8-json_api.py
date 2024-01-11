@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """script that sends a POST request with a letter as
 a parameter"""
 from sys import argv
