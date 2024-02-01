@@ -1,8 +1,9 @@
 #!/usr/bin/node
-
-// Javascript code that write the constant
-// you pass to argv[3] into
-// a file name argv[2].txt
+/*
+ * javascript code that write the
+ * the cotant you pass in argv 3 into
+ * a file name <argv[2]>.txt
+ */
 
 const fs = require('fs');
 
